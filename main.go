@@ -15,6 +15,9 @@ func main() {
 
 	// Auto-migrate tabel services
 	config.DB.AutoMigrate(&models.Service{})
+	config.DB.AutoMigrate(&models.PortofolioProjek{})
+	config.DB.AutoMigrate(&models.Blog{})
+
 
 	// Setup router
 	r := gin.Default()
