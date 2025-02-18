@@ -17,7 +17,10 @@ func main() {
 	config.DB.AutoMigrate(&models.Service{})
 	config.DB.AutoMigrate(&models.PortofolioProjek{})
 	config.DB.AutoMigrate(&models.Blog{})
-
+	config.DB.AutoMigrate(&models.Blog{})
+	config.DB.AutoMigrate(&models.ChooseUs{})
+	config.DB.AutoMigrate(&models.Faq{})
+	config.DB.AutoMigrate(&models.Testimonial{})
 
 	// Setup router
 	r := gin.Default()
